@@ -1,9 +1,12 @@
 <h1>Sign Up</h1>
 <fieldset>
   <form name="signUpForm">
-    <input type="text" name="first_name" placeholder="First Name">
-    <input type="text" name="last_name" placeholder="Last Name">
-    <input type="text" name="email" placeholder="Email">
-    <input type="text" name="phone" placeholder="Phone ###-###-####">
+    <input type="text" ng-model="signUpCtrl.user.first_name" name="first_name" placeholder="First Name">
+    <input type="text" ng-model="signUpCtrl.user.last_name" name="last_name" placeholder="Last Name">
+    <input type="text" ng-model="signUpCtrl.user.email" name="email" placeholder="Email">
+    <input type="text" ng-model="signUpCtrl.user.phone" name="phone" placeholder="Phone ###-###-####">
+    <button class="btn-primary" ng-click="signUpCtrl.submit()">
+      Submit
+    </button>
   </form>
 </fieldset>
