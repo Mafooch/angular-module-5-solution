@@ -4,13 +4,13 @@
 angular.module("public")
 .controller("SignUpController", SignUpController);
 
-SignUpController.$inject = ["SignUpService"];
-function SignUpController(SignUpService) {
+SignUpController.$inject = ["RegisteredUserService"];
+function SignUpController(RegisteredUserService) {
   var $ctrl = this;
   $ctrl.user = {};
 
   $ctrl.submit = function() {
-    SignUpService.saveUser($ctrl.user);
+    RegisteredUserService.saveUser($ctrl.user);
   };
 }
 })();
