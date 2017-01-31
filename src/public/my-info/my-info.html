@@ -6,5 +6,8 @@
   <p>Phone: {{myInfoCtrl.user.phone}}</p>
   <p>Favorite Menu Item: {{myInfoCtrl.user.menuItemTitle}}</p>
   <p>{{myInfoCtrl.user.menuPicture}}</p>
+  <img height="200" width="200" class="img-responsive"
+       ng-src="https://maffuccio-restaurant.herokuapp.com/images/{{myInfoCtrl.user.short_name}}.jpg"
+       alt="myInfoCtrl.short_name">
   <p>{{myInfoCtrl.user.menuItemDescription}}</p>
 </div>
