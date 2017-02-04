@@ -8,6 +8,5 @@ MyInfoController.$inject = ["RegisteredUserService"];
 function MyInfoController(RegisteredUserService) {
   var $ctrl = this;
   $ctrl.user = RegisteredUserService.getUser();
-  console.log($ctrl.user);
 }
 })();

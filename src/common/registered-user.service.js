@@ -10,10 +10,6 @@ function RegisteredUserService($http, ApiPath, MenuService) {
 
   service.saveUser = function(validUser) {
     service.user = validUser;
-    MenuService.getMenuItem(service.user.short_name).then(function(response) {
-      service.user.menuItemTitle = response.name;
-      service.user.menuItemDescription = response.description;
-    });
   };
 
   service.getUser = function() {
